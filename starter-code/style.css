@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+.container,
+.courses {
+  padding: 0 0 0 10.31rem;
+  display: flex;
+  flex: 1;
+}
+
+.picture-class {
+  background: url("assets/image-hero-desktop.png");
+  width: 100%;
+  min-height: 55rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 20rem;
+  background-position-y: -10rem;
+}
+
+.skilled-class .logo-div {
+  background: url("assets/logo-dark.svg");
+  width: 6.948rem;
+  height: 1.73025rem;
+  margin-top: 2.42rem;
+}
+
+.skilled-class > h1 {
+  margin-top: 11.6rem;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.skilled-class > p {
+  display: flex;
+  flex-direction: column;
+  width: 27.8125rem;
+  margin-top: 1.81rem;
+  color: #83869a;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+.btn {
+  color: #ffffff;
+  width: 10.4375rem;
+  height: 3.9375rem;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  border-radius: 1.96875rem;
+}
+
+.button-primary {
+  margin-top: 2.5rem;
+  margin-bottom: 15.62rem;
+}
+
+.button-primary,
+.courses .course-intro {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+.button-secondary {
+  margin-top: 1rem;
+  margin-left: 35rem;
+  background: #13183f;
+}
+
+.courses {
+  display: grid;
+  grid-template-areas: "course-intro course course";
+  gap: 2rem;
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+  padding: 1.5rem 10.31rem 8.75rem 10.31rem;
+}
+
+.courses .course-intro,
+.courses .course {
+  width: 21.875rem;
+  height: 20.125rem;
+  border-radius: 0.9375rem;
+  padding: 4rem 2rem;
+}
+
+.courses .course {
+  padding-top: 0;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+
+.course-intro > p {
+  width: 17.865rem;
+  color: #ffffff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2.5rem;
+}
+
+.course .course-link {
+  margin-top: 1.5rem;
+  text-decoration: none;
+  color: #f74780;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.course .course-logo {
+  margin-bottom: 2rem;
+}
+
+.course > p {
+  color: #83869a;
+  margin: 1.5rem 0;
+}
+
+.footer-section .footer-div {
+  background-color: #13183f;
+}
+
+.footer-div .logo {
+  background: url("assets/logo-light.svg");
+  width: 6.948rem;
+  height: 1.73025rem;
+}
+
+.footer-div .button-tertiary {
+  margin: 2rem 0 2rem 60rem;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+}
+
+.footer-div > img {
+  margin-top: 1rem;
+  margin-left: 10.36rem;
+}
+
+.button-primary:hover,
+.button-secondary:hover,
+.button-tertiary:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .container,
+  .courses {
+    padding: 0 0 0 2.44rem;
+  }
+
+  .skilled-class .logo-div > img,
+  .footer-div > img {
+    width: 5.5625rem;
+    height: 2.1875rem;
+  }
+
+  .skilled-class > h1 {
+    margin-top: 6.56rem;
+    font-size: 2.5rem;
+    width: 20.375rem;
+  }
+
+  .skilled-class > p {
+    width: 24.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+  }
+
+  .btn {
+    width: 8.75rem;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 1.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .courses {
+    grid-template-areas: "course-intro course";
+    gap: 0.63rem;
+    padding-bottom: 5.38rem;
+  }
+
+  .courses .course-intro,
+  .courses .course {
+    width: 21.1875rem;
+    height: 16.1875rem;
+    border-radius: 0.625rem;
+    padding: 3.5rem 0 0 2rem;
+  }
+
+  .course-intro > p {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 2rem;
+  }
+
+  .courses .course {
+    padding-top: 0;
+  }
+  .course > h2 {
+    font-size: 1.25rem;
+  }
+
+  .course .course-logo {
+    margin-bottom: 1rem;
+  }
+
+  .course > p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+
+  .course .course-link {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+
+  .footer-div .button-tertiary {
+    margin-left: 28.75rem;
+  }
+
+  .footer-div > img {
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+  }
+
+  .button-secondary {
+    margin-left: 8.35rem;
+  }
+
+  .picture-class {
+    background: url(assets/image-hero-tablet.png);
+    width: 100%;
+    min-height: 20rem;
+    background-repeat: no-repeat;
+    background-position-x: -4rem;
+    background-position-y: -6rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container,
+  .courses,
+  footer {
+    display: block;
+  }
+
+  .skilled-class {
+    height: 75vh;
+  }
+
+  .courses,
+  .footer-div {
+    width: 100vh;
+  }
+
+  .skilled-class .logo-div > img,
+  .footer-div > img {
+    width: 5.5625rem;
+    height: 2.1875rem;
+  }
+
+  .skilled-class > h1 {
+    margin-top: 2.81rem;
+    font-size: 4rem;
+    width: 34.375rem;
+  }
+
+  .skilled-class > p {
+    margin-top: 1.62rem;
+    width: 35rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+  .btn {
+    width: 15.4375rem;
+    height: 4rem;
+    border-radius: 1.96875rem;
+    margin-top: 1.5rem;
+  }
+
+  .courses .course-intro,
+  .courses .course {
+    width: 34.1875rem;
+    border-radius: 0.625rem;
+    padding: 3rem 0 0 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .courses .course-intro {
+    margin-top: 4.12rem;
+    height: 10rem;
+  }
+
+  .courses .course {
+    height: 20rem;
+  }
+
+  .course-intro > p {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 2rem;
+  }
+
+  .courses .course {
+    padding-top: 0;
+  }
+  .course > h2 {
+    font-size: 2rem;
+  }
+
+  .course .course-logo {
+    margin-bottom: 1rem;
+  }
+
+  .course > p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+  }
+
+  .course .course-link {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+
+  .footer-div .button-tertiary {
+    margin-left: 11.35rem;
+  }
+
+  .footer-div > img {
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+  }
+
+  .picture-class {
+    margin-left: 3rem;
+    background: url("assets/image-hero-mobile.png") no-repeat;
+    width: 75vh;
+  }
+
+  .button-secondary {
+    display: none;
+  }
+}
